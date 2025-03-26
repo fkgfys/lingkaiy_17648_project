@@ -7,6 +7,7 @@
 #include <microhttpd.h>
 
 #define PORT 8080
+#define MAX_FUEL 100
 
 static const uint8_t ERROR_CODES[] = {
     0xA1, 0xA2, 0xA3, 0xA4, 0xA5, 0xA6, 0xA7, 0xA8, 
@@ -27,11 +28,11 @@ typedef struct {
 
 VehicleData generate_vehicle_data() {
     VehicleData data;
-    data.oil_temperature = rand() % 300;
+    data.oil_temperature = (rand() % 80) + 170;
     data.maf_sensor = rand() % 2048;
     data.battery_voltage = rand() % 13;
     data.tire_pressure = rand() % 2048;
-    data.fuel_level = rand() % 100;
+    data.fuel_level = rand() % MAX_FUEL;
     data.fuel_consumption_rate = rand() % 50;
     data.error_code = ERROR_CODES[rand() % 18];
     return data;
