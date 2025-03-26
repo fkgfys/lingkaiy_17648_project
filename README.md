@@ -19,8 +19,8 @@ This project containerizes a simple API server written in C using [libmicrohttpd
 
     Clone this repository and navigate to its directory:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/fkgfys/lingkaiy_17648_project.git
+    cd lingkaiy_17648_project
     ```
 
 2. **Build and Start the Contianer**
