@@ -27,7 +27,7 @@ This project containerizes a simple API server written in C using [libmicrohttpd
 
     ```bash
     docker-compose build
-    docker-compose up
+    docker-compose up -d
     ```
 
 3. **Call the API**
